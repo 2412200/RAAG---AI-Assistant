@@ -3,3 +3,4 @@ langchain_core
 langchain_huggingface
 huggingface_hub
 streamlit
+loadenv

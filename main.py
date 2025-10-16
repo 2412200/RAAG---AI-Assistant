@@ -3,11 +3,13 @@ import streamlit as st
 from langchain_huggingface import HuggingFaceEndpoint, ChatHuggingFace
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import PromptTemplate
+from loadenv import load_env
+
+load_env()
+hf_token = os.getenv("HUGGING_FACE_TOKEN")
 
 st.set_page_config(page_title="RAAG - AI Code Generator", layout="wide")
 st.title("RAAG - AI Assistant")
-
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
 
 endpoint = HuggingFaceEndpoint(
     repo_id="mistralai/Mixtral-8x7B-Instruct-v0.1", 
