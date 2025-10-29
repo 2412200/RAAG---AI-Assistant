@@ -1,2 +1,39 @@
-.env
+# Virtual environment folders
+venv/
+.env/
+__pycache__/
+*.pyc
+
+# System files
 .DS_Store
+
+# Environment variables and tokens
+.env
+*.env
+
+# Model files / checkpoints
+*.pkl
+*.pt
+*.h5
+*.joblib
+
+# Data files
+*.csv
+*.xlsx
+*.db
+
+# Streamlit cache
+.streamlit/
+
+# Hugging Face / LangChain caches
+.cache/
+langchain.db
+
+# Logs
+*.log
+
+# Build or dist folders
+dist/
+build/
+
+faltu.py
